@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <title>Portafolio</title>
+    </head>
+ <body >
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" target="iframe-content">Inicio</a></li>
+                <li><a href="pagina2.html" target="iframe-content">Página 2</a></li>
+                <li><a href="pagina3.html" target="iframe-content">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="offset-lg-1 col-lg-10" style="background: #193455ac" style="clip-path: inset(0%);">
+            <div class="intro">
+                <h1><font color="white">NoxMonster INC</font></h1>
+                <p><font color="white">Diseño de imágenes para tí con tecnología de IA </font></p>
+                <img src="img/cvp.jpg" width="200" height="250">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2 class="intro"><font color="white">Galería de ImAgenes</font></h2>
+        </section>
+        <hr>
+        <section>
+            <div class="card-container">
+                    
+                <div class="card">
+                    <img src="img/img1.jpeg">
+                    <div class="card-content">
+                        <h2>Imagen de IA</h2>
+                        <p>Imagen generada para tí</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/img2.jpeg">
+                    <div class="card-content">
+                        <h2>Imagen de IA</h2>
+                        <p>Imagen generada para tí</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/img3.jpeg">
+                    <div class="card-content">
+                        <h2>Imagen de IA</h2>
+                        <p>Imagen generada para tí</p>
+                    </div>
+                </div>	
+        </section>
+        <hr>
+
+        <section class="contact-form">
+            <form id="contactForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="NoxMonster" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="NoxMonster@gmail.com" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="abc..." required rows="5"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
+        
+        <footer>
+            <p><font color = "white">©2024 Camilo Velasco P. Todos los derechos reservados.</font></p>
+        </footer>
+    </main>
+    <script>
+        (function(){
+            emailjs.init("35-oTVoBejHhagnln"); //Reemplazar con la clave pública
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+ </body>
+</html>
